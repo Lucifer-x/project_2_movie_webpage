@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Jolc movie</title>
+    <meta name="description" content="This is our group project for DSA5101">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'picture/favicon.png' %}">
+    <!-- Place favicon.ico in the root directory --><!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/odometer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'css/default.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+</head>
+<body><!-- preloader -->
+<div id="preloader">
+    <div id="loading-center">
+        <div id="loading-center-absolute"><img src="{% static 'picture/preloader.svg' %}" alt="loading"></div>
+    </div>
+</div><!-- preloader-end -->
+<!-- Scroll-top -->
+<button class="scroll-top scroll-to-target" data-target="html"><i class="fas fa-angle-up"></i></button>
+<!-- Scroll-top-end--><!-- header-area -->
+<header>
+    <div id="sticky-header" class="menu-area transparent-header">
+        <div class="container custom-container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
+                    <div class="menu-wrap">
+                        <nav class="menu-nav show">
+                            <div class="logo"><a href="/about-us"><img src="{% static 'picture/logo.png' %}" alt="Logo"></a>
+                            </div>
+                            <div class="navbar-wrap main-menu d-none d-lg-flex">
+                                <ul class="navigation">
+                                    <li class="menu-item-has-children">
+                                        <a href="/about-us">About Us</a>
+                                    </li>
+                                    <li class="active menu-item-has-children"><a href="/about-us/movies">Movie</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-action d-none d-md-block">
+                                <ul>
+                                    <li class="header-lang">
+                                        <form action="#">
+                                            <div class="icon"><i class="flaticon-globe"></i></div>
+                                            <select id="lang-dropdown">
+                                                <option value="">En</option>
+                                            </select></form>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="mobile-menu">
+                        <div class="close-btn"><i class="fas fa-times"></i></div>
+                        <nav class="menu-box">
+                            <div class="nav-logo"><a href="/about_us"><img src="{% static 'picture/logo.png' %}"></a>
+                            </div>
+                            <div class="menu-outer">
+                                <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header><!-- header-area-end -->
+<!-- main-area -->
+<main><!-- breadcrumb-area -->
+    <section class="breadcrumb-area breadcrumb-bg" data-background="{% static 'picture/breadcrumb_bg.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb-content"><h2 class="title">About Us</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                                <li class="breadcrumb-item"><a href="\about-us\movies">Movie</a></li>
+
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- breadcrumb-area-end -->
+    <section class="contact-area contact-bg" data-background="{% static 'picture/contact_bg.jpg' %}">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xl-8 col-lg-7">
+                    <div class="contact-form-wrap">
+                        <div class="widget-title mb-50"><h5 class="title">Information</h5></div>
+                        <div class="contact-form">
+                            <div class="services-content-wrap">
+                                <div class="section-title mb-40"><span class="sub-title">About Us</span>
+                                    <h2 class="title">We offer a range of training services and products,
+                                        including:</h2></div>
+                                <div class="services-list">
+                                    <ul>
+                                        <li>
+                                            <div class="content"><h5>&emsp;·&emsp;Customized training for playing
+                                                basketball</h5></div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><h5>&emsp;·&emsp; Training for origami design</h5>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="content"><h5>&emsp;·&emsp;Rent movies and TV-drama series</h5>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="widget-title mb-50"><h5 class="title">Contact</h5></div>
+                    <div class="contact-info-wrap"><p><span></span></p>
+                        <div class="contact-info-list">
+                            <ul>
+                                <li>
+                                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <p><span>Address:</span>21 Lower Kent Ridge Road, Singapore</p></li>
+                                <li>
+                                    <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                                    <p><span>Phone:</span>(65) 8790 5371</p></li>
+                                <li>
+                                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                                    <p><span>Email:</span>e0950459@u.nus.edu</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- contact-area-end -->
+
+    <!-- newsletter-area -->
+    <section class="newsletter-area newsletter-bg" data-background="{% static 'picture/newsletter_bg.jpg' %}">
+        <div class="container">
+            <div class="newsletter-inner-wrap">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="newsletter-content"><h4>Thanks for your support!</h4>
+                            <p>Please contact us if you have any problems or suggestions.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- newsletter-area-end -->
+</main><!-- main-area-end -->
+<!-- footer-area -->
+<footer>
+    <div class="footer-top-wrap">
+        <div class="container">
+            <div class="footer-menu-wrap">
+                <div class="row align-items-center">
+                    <div class="col-lg-3">
+                        <div class="footer-logo"><a href="/about-us"><img src="{% static 'picture/logo.png' %}" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="footer-menu">
+                            <nav>
+                                <ul class="navigation">
+                                    <li><a href="/about-us">About Us</a></li>
+                                    <li><a href="/about-us/movies">Movie</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="copyright-text"><p>Copyright &copy;2022. All Rights Reserved By NUS DSA5101 Group 8</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer><!-- footer-area-end --><!-- JS here -->
+<script type="text/javascript" src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.odometer.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.appear.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/slick.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/wow.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/aos.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/plugins.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
