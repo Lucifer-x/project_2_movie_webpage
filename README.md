@@ -33,6 +33,4 @@ This project is our group project building a web page using django.
 
 ## License
 
-[License MIT](../LICENSE)
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmisitebao%2Fyakia.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmisitebao%2Fyakia?ref=badge_large)
+[License MIT](./LICENSE)
